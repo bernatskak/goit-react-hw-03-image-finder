@@ -17,8 +17,10 @@ function ImageGalleryItem({ image, openModal }) {
   );
 }
 
-ImageGalleryItem.propTypes = {
-  image: PropTypes.object.isRequired,
+ImageGalleryItem.prototype = {
+  webformatURL: PropTypes.string,
+  largeImageURL: PropTypes.string.isRequired,
+  tags: PropTypes.string.isRequired,
   openModal: PropTypes.func.isRequired,
 };
 
